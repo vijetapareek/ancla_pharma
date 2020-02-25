@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Pharma details</title>
+        <link rel="stylesheet" href="\static\pharmapp\css\bootstrap.min.css">
+        <link rel="stylesheet" href="\static\pharmapp\css\pharma_website.css">
+    </head>
+    <body>
+    <img src="\static\pharmapp\images\company_logo1.jpg" alt="company logo" width="200" height="100">
+
+    <p id="user_name"> ADMIN : {{ username }} </p>
+
+    </div>
+
+    <br>
+    <br>
+
+    <form action="/pharma_website.html">
+
+        <label id="product_ids_label">Choose a product:</label>
+
+        <select id="product_ids" name="product_name">
+        {% for product_name in product_list %}
+            <option  value= {{ product_name }}> {{ product_name }} </option>
+        {% endfor %}
+        </select>
+
+        <label id="events_label">Choose an event:</label>
+
+        <select id="events" name="event_name" >
+        {% for event_name in event_list %}
+            <option value= {{ event_name }}> {{ event_name }} </option>
+        {% endfor %}
+        </select>
+
+        <br>
+        <br>
+
+        <label class="start_date_label" style="font-weight: bold;">Enter product start date:</label>
+        <input type="date" id="prod_start_date_box" name="prod_start_date" ><br><br>
+        <label class="start_date_label" style="font-weight: bold;">Enter event start date:</label>
+        <input type="date" id="event_start_date_box" name="event_start_date">
+
+        <br>
+        <br>
+
+        <input class="button" type="submit" value="Search">
+    </form>
+
+<!--    <label for="product_id_selected">Selected Product ID: </label>-->
+<!--    <p>  {{ product_id_selected }} </p>-->
+<!--    <label for="event_name_selected">Selected event: </label>-->
+<!--    <p> {{ event_name_selected }} </p>-->
+
+<!--    <label for="start_date">Selected Start Date: </label>-->
+<!--    <p> {{ start_date }} </p>-->
+
+<!--    <label for="end_date">Selected End date: </label>-->
+<!--    <p> {{ end_date }} </p>-->
+
+    {% if product_df_html_str %}
+         {% autoescape off %} 
+            {{ product_df_html_str }}
+         {% endautoescape %} 
+    {% endif %}
+
+    <br>
+
+    {% if event_df_html_str %}
+        {% autoescape off %}
+            {{ event_df_html_str }}
+        {% endautoescape %}
+    {% endif %}
+
+    <br>
+
+    {% if product_event_df_html_str %}
+        {% autoescape off %}
+            {{ product_event_df_html_str }}
+        {% endautoescape %}
+    {% endif %}
+
+    <br>
+    <br>
+
+    </body>
+</html>

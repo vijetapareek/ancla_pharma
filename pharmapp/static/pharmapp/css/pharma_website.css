@@ -1,0 +1,100 @@
+body {
+  background-color: lightblue;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+#user_name{
+    position: inline;
+    font-weight: bold;
+    margin-left: 90%;
+}
+
+#product_ids_label {
+    font-weight: bold;
+}
+
+#product_ids {
+    position: relative;
+    width: 200px;
+    height : 35px;
+    padding: 5px;
+    margin: 0 auto;
+    background: white;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px
+}
+
+#events {
+    position: relative;
+    width: 200px;
+    height : 35px;
+    padding: 5px;
+    margin: 0 auto;
+    background: white;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px
+}
+
+#events_label {
+    font-weight: bold;
+    margin-left:50px;
+}
+
+.start_date_label {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#prod_start_date_box {
+    position: relative;
+    width: 200px;
+    height : 35px;
+    padding: 5px;
+    margin: 0 auto;
+    background: white;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px
+}
+
+#event_start_date_label {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#event_start_date_box {
+    position: relative;
+    width: 200px;
+    height : 35px;
+    padding: 5px;
+    margin: 0 auto;
+    background: white;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  height:45px;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
